@@ -1,0 +1,11 @@
+title: Polyglot Schema
+description: Schema for data description languages
+github_username: polyglot-schema
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE.txt
