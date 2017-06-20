@@ -1,6 +1,6 @@
-# Polyglot Schema
+# JSON Schema Everywhere
 
-Home of polyglot-schema.github.io, a website dedicated to tracking and encouraging the use of JSON Schema with other formats.
+Home of json-schema-everywhere.github.io, a website dedicated to tracking and encouraging the use of JSON Schema with other data formats.
 
 # Contributing
 

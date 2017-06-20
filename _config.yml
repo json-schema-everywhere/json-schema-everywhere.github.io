@@ -1,6 +1,6 @@
-title: Polyglot Schema
-description: Schema for data description languages
-github_username: polyglot-schema
+title: JSON Schema Everywhere
+description: Schema validation for data description languages
+github_username: json-schema-everywhere
 markdown: kramdown
 theme: minima
 gems:
