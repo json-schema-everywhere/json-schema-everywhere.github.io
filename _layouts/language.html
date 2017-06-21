@@ -4,12 +4,36 @@ layout: default
 <article class="post">
 
   <header class="post-header">
-    <img style="float:right;width:160px" src="assets/logos/{{page.logo}}">
+    <a href={{page.project_url}}><img style="float:right;width:160px" src="assets/logos/{{page.logo}}"></a>
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
 
   <div class="post-content">
+    <p>
+      <a href={{page.project_url}}>{{page.long_name}} ({{page.short_name}})</a> {{page.description_blurb}}
+    </p>
+
     {{ content }}
+
+    <h2 id="editors">Editor Support</h2>
+
+    <h2 id="validators">Validation Tools</h2>
+
+    <h2 id="alternatives">Alternatives</h2>
+
+    {% if page.alternatives %} {% for alternative in page.alternatives %}
+    <ul>
+      <li><a href="{{alternative.project_url}}">{{alternative.name}}</a> {% for note in alternative.notes %}
+        <ul>
+          <li>{{note}}</li>
+        </ul>
+        {% endfor %}
+    </ul>
+    </ul>
+
+    {% endfor %} {% else %}
+    <p>No other schema definition formats are known to target {{page.short_name}}.</p>
+    {% endif %}
   </div>
 
 </article>
