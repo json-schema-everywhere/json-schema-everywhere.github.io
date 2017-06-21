@@ -4,5 +4,3 @@ short_name: CSON
 long_name: CoffeeScript Object Notation
 project_url: https://github.com/bevry/cson
 ---
-
-This language seems to have comparatively less developer demand so was excluded for the sake of relevance.

@@ -9,7 +9,6 @@ exclude:
   - README.md
   - CONTRIBUTING.md
   - LICENSE.txt
-  - _languages/cson.md
   - _languages/json.md
 collections:
   languages:

@@ -4,7 +4,9 @@ layout: default
 <article class="post">
 
   <header class="post-header">
+  {% if page.logo %}
     <a href={{page.project_url}}><img style="float:right;width:160px" src="assets/logos/{{page.logo}}"></a>
+  {% endif %}
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
 
