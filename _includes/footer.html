@@ -2,43 +2,33 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
+        <h2 class="footer-heading"><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h2>
         <ul class="contact-list">
           <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
+            {{ site.description | escape }}
+          </li>
+          {% if site.email %}
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          {% endif %}
+          {% include icon-github.html username=site.github_username %}
+        </ul>
+
+        <ul class="social-media-list">
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-        <p><a href="https://github.com/{{site.github_username}}/json-schema-everywhere.github.io/edit/master/{{page.path}}">Edit this page on GitHub</a></p>
+        <p>
+          The content of this site is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>.<br>
+          All logos and trademarks are property of their respective owners.<br>
+          <a href="https://github.com/{{site.github_username}}/json-schema-everywhere.github.io/edit/master/{{page.path}}">
+          <strong>Edit this page on GitHub</strong></a>
+        </p>
       </div>
     </div>
 

@@ -9,3 +9,4 @@ exclude:
   - README.md
   - CONTRIBUTING.md
   - LICENSE.txt
+  - cson.md
