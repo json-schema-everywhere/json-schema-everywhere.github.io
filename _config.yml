@@ -10,6 +10,7 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE.txt
   - _languages/cson.md
+  - _languages/json.md
 collections:
   languages:
     output: true
