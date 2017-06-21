@@ -9,4 +9,15 @@ exclude:
   - README.md
   - CONTRIBUTING.md
   - LICENSE.txt
-  - cson.md
+  - _languages/cson.md
+collections:
+  languages:
+    output: true
+    permalink: '/:path'
+
+defaults:
+  - scope:
+      path: ''
+      type: languages
+    values:
+      layout: language
