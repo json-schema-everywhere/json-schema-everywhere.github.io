@@ -13,6 +13,34 @@ layout: default
       <a href={{page.project_url}}>{{page.long_name}} ({{page.short_name}})</a> {{page.description_blurb}}
     </p>
 
+    <input id="toggle" type="checkbox" style="align:right" unchecked><label style="align:right">Check to see examples of JSON and {{page.short_name}}</label>
+
+<div id="expand">
+
+<div class="block" style="float:left;width:50%;">
+
+<h3>JSON</h3>
+{% capture json_include %}```json
+{% include example.json %}
+```{% endcapture %}
+{{ json_include | markdownify }}
+
+</div>
+
+<div class="block" style="float:right;width:50%;">
+
+<h3>{{page.short_name}}</h3>
+      
+{% capture target_include %}```{{page.short_name | downcase}}
+{% include example.{{page.short_name | downcase}} %}
+```{% endcapture %}
+{{ target_include | markdownify }}
+
+</div>  
+      <small>Example JSON from the <a href="json-schema.org/example1.html#set-of-products">JSON Schema</a> website.</small>
+    </div>
+<br>
+
     {{ content }}
 
     <h2 id="editors">Editor Support</h2>

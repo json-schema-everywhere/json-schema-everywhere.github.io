@@ -1,0 +1,9 @@
+//https://codepen.io/peternguyen/pen/hICga/
+#toggle:checked ~ #expand {
+  height: unset;
+}
+#expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+}

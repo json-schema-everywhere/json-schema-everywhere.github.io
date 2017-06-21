@@ -1,0 +1,25 @@
+
+table {
+	display:block;
+	width:100%;
+	overflow:auto;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+table th {
+	font-weight:600
+}
+table th, table td {
+	padding:6px 13px;
+	border:1px solid black;
+}
+table tr {
+	background-color:white;
+	border-top:1px solid black;
+}
+table tr:nth-child(2n) {
+	background-color:#f6f8fa
+}
+table td {
+	text-align: center;
+}
