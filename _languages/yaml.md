@@ -6,7 +6,17 @@ project_url: http://yaml.org/
 logo: yaml.svg
 description_blurb: is a powerful data serialization language that aims to be human friendly.  Most JSON is syntactically valid YAML, but idiomatic YAML follows very different conventions.  While YAML has advanced features that cannot directly mapped to JSON, most YAML files use features that can be validated by JSON Schema making JSON Schema the best choice for validation.
 editors:
+  - name: Visual Studio Code
+    project_url: https://marketplace.visualstudio.com/items?itemName=adamvoss.yaml
+    features:
+      validation: true
+      error_highlighting: true
+      completion: false
 validators:
+#  - name: Name
+#    project_url: http://www.example.com
+#    language: ProgLang
+#    license: MIT
 alternatives:
   - name: Kwalify
     project_url: http://www.kuwata-lab.com/kwalify/

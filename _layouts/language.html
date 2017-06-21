@@ -16,8 +16,54 @@ layout: default
     {{ content }}
 
     <h2 id="editors">Editor Support</h2>
+    {% if page.editors %}
 
-    <h2 id="validators">Validation Tools</h2>
+    <table>
+    <tr>
+    <th>Editor</th>
+    <th>Validation</th>
+    <th>Error Highlighting</th>
+    <th>Completion Suggestions</th>
+    </tr>
+
+    {% for editor in page.editors %}
+      <tr>
+        <td><a href="{{editor.project_url}}">{{editor.name}}</a></td>
+        <td>
+        {% if editor.features.validation %}
+          &#x2713;
+        {% else %}
+          &#x2717;
+        {% endif %}</td>
+        <td>{% if editor.features.error_highlighting %}
+          &#x2713;
+        {% else %}
+          &#x2717;
+        {% endif %}</td>
+        <td>{% if editor.features.completion %}
+          &#x2713;
+        {% else %}
+          &#x2717;
+        {% endif %}</td>
+      </tr>
+    {% endfor %}
+
+    </table>
+
+    {% else %}
+      <p>No editors supporting JSON Schema validation of {{page.short_name}} are known.</p>
+    {% endif %}
+
+    <h2 id="validators">Schema Validation Tools and Libraries</h2>
+    {% if page.validators %}
+    <ul>
+    {% for validator in page.validators %}
+      <li><a href="{{validator.project_url}}">{{validator.name}}</a> - Written in {{validator.language}}. Released under the {{validator.license}} license.</li></a>
+    {% endfor %}
+    </ul>
+    {% else %}
+      <p>No validation tools or libraries are known to directly accept {{page.short_name}} content for JSON Schema validation.</p>
+    {% endif %}
 
     <h2 id="alternatives">Alternatives</h2>
 
