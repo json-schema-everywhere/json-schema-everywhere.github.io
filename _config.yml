@@ -1,6 +1,7 @@
 title: JSON Schema Everywhere
 description: Tracking schema validation and editor support of data description languages.
 github_username: json-schema-everywhere
+google_analytics: UA-101483402-1
 markdown: kramdown
 theme: minima
 gems:
