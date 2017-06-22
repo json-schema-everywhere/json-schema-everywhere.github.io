@@ -5,7 +5,7 @@ long_name: YAML Ain't Markup Language
 project_url: http://yaml.org/
 logo: yaml.svg
 highlighting_language: yaml
-description_blurb: is a powerful data serialization language that aims to be human friendly.  Most JSON is syntactically valid YAML, but idiomatic YAML follows very different conventions.  While YAML has advanced features that cannot be directly mapped to JSON, most YAML files use features that can be validated by JSON Schema.  JSON Schema is the most portable and broadly supported choice for validation.
+description_blurb: is a powerful data serialization language that aims to be human friendly.  Most JSON is syntactically valid YAML, but idiomatic YAML follows very different conventions.  While YAML has advanced features that cannot be directly mapped to JSON, most YAML files use features that can be validated by JSON Schema.  JSON Schema is the most portable and broadly supported choice for YAML validation.
 editors:
   - name: Visual Studio Code
     project_url: https://marketplace.visualstudio.com/items?itemName=adamvoss.yaml
@@ -29,7 +29,7 @@ alternatives:
     project_url: http://rx.codesimply.com/
     notes:
       - Supports JavaScript, Perl, PHP, Ruby, Python
-      - Low development activity
+      - No recent development activity
       - No tooling support
   - name: yaml-validator
     project_url: https://github.com/paazmaya/yaml-validator
