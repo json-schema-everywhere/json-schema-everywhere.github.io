@@ -33,7 +33,7 @@ layout: default
 
 <h3>{{page.short_name}}</h3>
       
-{% capture target_include %}```{{page.short_name | downcase}}
+{% capture target_include %}```{{page.highlighting_language | downcase}}
 {% include example.{{page.short_name | downcase}} %}
 ```{% endcapture %}
 {{ target_include | markdownify }}
