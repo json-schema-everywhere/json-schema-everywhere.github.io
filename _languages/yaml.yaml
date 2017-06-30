@@ -42,4 +42,4 @@ alternatives:
       - JavaScript only
       - Only structural validation
       - Little adoption. npm shows low download count.
----
+...
