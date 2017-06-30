@@ -14,10 +14,10 @@ editors:
       error_highlighting: true
       completion: false
 validators:
-#  - name: Name
-#    project_url: http://www.example.com
-#    language: ProgLang
-#    license: MIT
+  - name: Polyglottal JSON Schema Validator
+    project_url: https://www.npmjs.com/package/pajv
+    language: JavaScript
+    license: MIT
 alternatives:
   - name: Kwalify
     project_url: http://www.kuwata-lab.com/kwalify/
