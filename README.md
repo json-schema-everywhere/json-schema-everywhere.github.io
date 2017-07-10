@@ -4,7 +4,7 @@ Home of json-schema-everywhere.github.io, a website dedicated to tracking and en
 
 # Contributing
 
-Contributions welcome and appreciated.  Please see [CONTRIBUTING](CONTRIBUTING.md).
+Contributions welcome and appreciated!  Please see [CONTRIBUTING](CONTRIBUTING.md).
 
 ## License
 
