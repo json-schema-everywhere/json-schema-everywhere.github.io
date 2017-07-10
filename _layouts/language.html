@@ -12,10 +12,10 @@ layout: default
 
   <div class="post-content">
     <p>
-      <a href={{page.project_url}}>{{page.long_name}} ({{page.short_name}})</a> {{page.description_blurb}}
+      JSON Schema can be used to validate {{ page.short_name }} documents.  <a href={{page.project_url}}>{{page.long_name}} ({{page.short_name}})</a> {{page.description_blurb}}
     </p>
 
-    <input id="toggle" type="checkbox" style="align:right" unchecked><label style="align:right">Check to see examples of JSON and {{page.short_name}}</label>
+    <input id="toggle" type="checkbox" style="align:right" unchecked><label style="align:right">Check to see examples of JSON and {{page.short_name}} documents</label>
 
 <div id="expand">
 
@@ -81,14 +81,18 @@ layout: default
     </table>
 
     {% else %}
-      <p>No editors supporting JSON Schema validation of {{page.short_name}} are known.</p>
+      <p>No editors supporting JSON Schema validation of {{page.short_name}} documents are known.</p>
     {% endif %}
 
-    <h2 id="validators">Schema Validation Tools and Libraries</h2>
+    <h2 id="validators">Tools and Libraries</h2>
     {% if page.validators %}
     <ul>
     {% for validator in page.validators %}
-      <li><a href="{{validator.project_url}}">{{validator.name}}</a> - Written in {{validator.language}}. Released under the {{validator.license}} license.</li></a>
+      <li><a href="{{validator.project_url}}">{{validator.name}}</a> - Written in {{validator.language}}. Released under the {{validator.license}} license.
+        <ul>
+          <li>{{ validator.description }}</li>
+        </ul>
+      </li>
     {% endfor %}
     </ul>
     {% else %}
