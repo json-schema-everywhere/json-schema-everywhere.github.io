@@ -18,7 +18,7 @@ validators:
     project_url: https://www.npmjs.com/package/pajv
     language: JavaScript
     license: MIT
-    description: pajv is a command line utility that can be used to validate data in numerous formats against a JSON Schema.
+    description: Polyglottal JSON Schema Validator (pajv) is a command line utility that can be used to validate data in numerous formats against a JSON Schema.
 alternatives:
   - name: Kwalify
     project_url: http://www.kuwata-lab.com/kwalify/
@@ -43,4 +43,9 @@ alternatives:
       - JavaScript only
       - Only structural validation
       - Little adoption. npm shows low download count.
+  - name: Yamale
+    project_url: https://pypi.python.org/pypi/yamale
+    notes:
+      - Python only
+      - Relatively unknown
 ---
