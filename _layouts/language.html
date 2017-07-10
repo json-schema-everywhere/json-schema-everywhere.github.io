@@ -88,7 +88,11 @@ layout: default
     {% if page.validators %}
     <ul>
     {% for validator in page.validators %}
-      <li><a href="{{validator.project_url}}">{{validator.name}}</a> - Written in {{validator.language}}. Released under the {{validator.license}} license.</li></a>
+      <li><a href="{{validator.project_url}}">{{validator.name}}</a> - Written in {{validator.language}}. Released under the {{validator.license}} license.
+        <ul>
+          <li>{{ validator.description }}</li>
+        </ul>
+      </li>
     {% endfor %}
     </ul>
     {% else %}

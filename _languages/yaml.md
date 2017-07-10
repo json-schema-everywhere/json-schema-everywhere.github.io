@@ -18,6 +18,7 @@ validators:
     project_url: https://www.npmjs.com/package/pajv
     language: JavaScript
     license: MIT
+    description: pajv is a command line utility that can be used to validate data in numerous formats against a JSON Schema.
 alternatives:
   - name: Kwalify
     project_url: http://www.kuwata-lab.com/kwalify/
