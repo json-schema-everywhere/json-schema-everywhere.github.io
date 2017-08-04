@@ -22,17 +22,24 @@ layout: default
 <div class="block" style="float:left;width:50%;">
 
 <h3>JSON</h3>
+{% if page.example_json_file %}
+{% capture target_include %}```json
+{% include {{page.example_json_file}} %}
+```{% endcapture %}
+{{ target_include | markdownify }}
+{% else %}
 {% capture json_include %}```json
 {% include example.json %}
 ```{% endcapture %}
 {{ json_include | markdownify }}
+{% endif %}
 
 </div>
 
 <div class="block" style="float:right;width:50%;">
 
 <h3>{{page.short_name}}</h3>
-      
+
 {% capture target_include %}```{{page.highlighting_language | downcase}}
 {% include example.{{page.short_name | downcase}} %}
 ```{% endcapture %}
