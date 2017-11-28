@@ -2,6 +2,7 @@
 title: Schema Validation for TOML
 short_name: TOML
 long_name: Tom's Obvious, Minimal Language
+logo: toml.svg
 highlighting_language: toml
 example_json_file: example.toml.json
 project_url: https://github.com/toml-lang/toml
