@@ -13,6 +13,12 @@ editors:
       validation: true
       error_highlighting: true
       completion: true
+  - name: PyCharm
+    project_url: https://www.jetbrains.com/pycharm/
+    features:
+      validation: true
+      error_highlighting: true
+      completion: true
 validators:
   - name: Polyglottal JSON Schema Validator
     project_url: https://www.npmjs.com/package/pajv
