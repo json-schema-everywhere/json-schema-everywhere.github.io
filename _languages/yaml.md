@@ -19,6 +19,11 @@ validators:
     language: JavaScript
     license: MIT
     description: Polyglottal JSON Schema Validator (pajv) is a command line utility that can be used to validate data in numerous formats against a JSON Schema.
+  - name: Justify
+    project_url: https://github.com/leadpony/justify
+    language: Java
+    license: Apache 2.0
+    description: Justify is a JSON validator based on JSON Schema Specification and Java API for JSON Processing (JSR 374). It's compliant with JSON Schema Specification Draft-07, -06, and -04.
 alternatives:
   - name: Kwalify
     project_url: http://www.kuwata-lab.com/kwalify/
