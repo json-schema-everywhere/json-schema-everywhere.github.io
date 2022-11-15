@@ -7,6 +7,13 @@ highlighting_language: toml
 example_json_file: example.toml.json
 project_url: https://github.com/toml-lang/toml
 description_blurb: is a minimal language with growing popularity that is largely compatible with JSON, though more restrictive.  There is a proposal for a TOML-specific schema language, which may be a viable option in the future.  However, until such a proposal gains traction and is implemented, JSON Schema remains the most available option for validating TOML files.
+editors:
+  - name: Visual Studio Code
+    project_url: https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml
+    features:
+      validation: true
+      error_highlighting: true
+      completion: true
 validators:
   - name: Polyglottal JSON Schema Validator
     project_url: https://www.npmjs.com/package/pajv
